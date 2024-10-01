@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,500&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./styles/output.css" />
+
+    <title>Nando Burguer - A Melhor Hamburgueria!</title>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+        <div class="w-full h-full flex flex-col justify-center items-center">
+            <img src="./assets/logo-ns1.jpg" alt="Logo Nando Burguer"
+                class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200" />
+            <h1 class="text-4xl mt-4 mb-2 font-bold text-white">
+                Nando Burguer
+            </h1>
+
+            <span class="text-white font-medium">Rua Maria Jose Rocha Thibes 02, Tupy</span>
+
+            <div class="bg-green-500 px-4 py-1 rounded-lg mt-5" id="date-span">
+                <span class="text-white font-medium">Seg á Sáb - 08:00 às 20:00</span>
+            </div>
+
+        </div>
+    </header>
+    <!-- FIM HEADER -->
+
+    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
+        Conheça nosso menu
+    </h2>
+
+    <!-- INICIO DO MENU -->
+    <div id="menu">
+
+        <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 md:gap-12 mx-auto max-w-7xl px-3 mb-16">
+
+            <!-- PRODUTO ITEM 1 Smash Supreme -->
+            <div class="flex gap-2">
+                <img src="./assets/hamb-1.png" alt="Hamburguer Smash Supreme"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+                <div>
+                    <p class="font-bold">Hamburguer Smash Supreme</p>
+                    <p class="text-sm"> Dê uma mordida no nosso Smash Supreme! Dois suculentos hamburgures, queijos derretidos, complementados com vegetais frescos e bacon. Uma explosão de sabor que vai satisfazer até o apetite mais voraz!</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                      <p class="font-bold text-lg">R$ 18,90</p>
+                      <button 
+                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Hamburguer Smash Supreme"
+                        data-price="18.90"
+                      >
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                      </button>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- FIM PRODUTO ITEM 1 -->
+
+                  <!-- PRODUTO ITEM 2 Titã do Bacon Duplo -->
+                  <div class="flex gap-2">
+                    <img src="./assets/hamb-2.png" alt="Hamburguer Titã do Bacon Duplo"
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+    
+                    <div>
+                        <p class="font-bold">Hamburguer Titã do Bacon Duplo</p>
+                        <p class="text-sm"> Enfrente o Monstruoso se você ousar! Camadas generosas de carne suculenta, queijo derretido em abundância, fatias grossas de bacon irresistivel. Este colosso culinário não é para os fracos de coração - Apenas para os verdadeiros amantes de hamburguer e bacon!</p>
+    
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                          <p class="font-bold text-lg">R$ 35,90</p>
+                          <button 
+                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                            data-name="Hamburguer Titã do Bacon Duplo"
+                            data-price="35.90"
+                          >
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                          </button>
+                        </div>
+    
+                    </div>
+    
+                </div>
+                <!-- FIM PRODUTO ITEM 2 -->
+
+                      <!-- PRODUTO ITEM 3 Tsunami de Queijo -->
+            <div class="flex gap-2">
+              <img src="./assets/hamb-3.png" alt="Hamburguer Tsunami de Queijo"
+                  class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+              <div>
+                  <p class="font-bold">Hamburguer Tsunami de Queijo</p>
+                  <p class="text-sm"> Surfando na onda do sabor, apresentamos O Tsunami de Queijo! Dois hamburgueres suculentos afogados em em uma maré de cheddar derretido. Uma experiência que vai inundar seu paladar de puro prazer gastronômico e matar sua fome de queijo!</p>
+
+                  <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold text-lg">R$ 17,90</p>
+                    <button 
+                      class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                      data-name="Hamburguer Tsunami de Queijo"
+                      data-price="17.90"
+                    >
+                      <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                  </div>
+
+              </div>
+
+          </div>
+          <!-- FIM PRODUTO ITEM 3 -->
+
+                <!-- PRODUTO ITEM 4 Frango da Fazenda -->
+                <div class="flex gap-2">
+                  <img src="./assets/hamb-4.png" alt="Hamburguer Frango da Fazenda"
+                      class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+  
+                  <div>
+                      <p class="font-bold">Hamburguer Frango da Fazenda</p>
+                      <p class="text-sm"> Procurando algo mais leve, mas igualmente delicioso? O leve e crocante é a escolha perfeita! Frango grelhado à perfeição, vegetais frescos e crocantes, tudo abraçado por um pão macio e leve com gergelim. Uma explosão de sabores frescos direto da Fazenda!</p>
+                      <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 29,90</p>
+                        <button 
+                          class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                          data-name="Hamburguer Frango da Fazenda"
+                          data-price="29.90"
+                        >
+                          <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                      </div>
+  
+                  </div>
+  
+              </div>
+              <!-- FIM PRODUTO ITEM 4 -->
+
+                  <!-- PRODUTO ITEM 5 Menos é Mais -->
+            <div class="flex gap-2">
+              <img src="./assets/hamb-5.png" alt="Hamburguer Menos é Mais"
+                  class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+              <div>
+                  <p class="font-bold">Hamburguer Menos é Mais</p>
+                  <p class="text-sm"> Descubra por que menos as vezes é mais! Um hamburguer perfeitamente grelhado, coberto com queijo derretido e nosso molho secreto, complementado com vegetais frescos. Simples, clássico e absolutamente delicioso - é o hamburguer que você sempre sonhou!</p>
+
+                  <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold text-lg">R$ 31,90</p>
+                    <button 
+                      class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                      data-name="Hamburguer Menos é Mais"
+                      data-price="31.90"
+                    >
+                      <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                  </div>
+
+              </div>
+
+          </div>
+          <!-- FIM PRODUTO ITEM 5 -->
+
+                <!-- PRODUTO ITEM 6 Tradicional Gourmet -->
+                <div class="flex gap-2">
+                  <img src="./assets/hamb-6.png" alt="Hamburguer Tradicional Gourmet"
+                      class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+  
+                  <div>
+                      <p class="font-bold">Hamburguer Tradicional Gourmet</p>
+                      <p class="text-sm"> Saboreie a perfeição em cada mordida do nosso tradicional gourmet! Carne suculenta, queijo derretido e vegetais frescos em perfeita harmonia. Acompanhado de nossas batatas fritas douradas, é a combinação ideal para satisfazer seu paladar exigente!</p>
+  
+                      <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 21,90</p>
+                        <button 
+                          class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                          data-name="Hamburguer Tradicional Gourmet"
+                          data-price="21.90"
+                        >
+                          <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                      </div>
+  
+                  </div>
+  
+              </div>
+              <!-- FIM PRODUTO ITEM 6 -->
+
+                  <!-- PRODUTO ITEM 7 Ring Deluxe -->
+            <div class="flex gap-2">
+              <img src="./assets/hamb-7.png" alt="Hamburguer Ring Deluxe"
+                  class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+              <div>
+                  <p class="font-bold">Hamburguer Ring Deluxe</p>
+                  <p class="text-sm"> Prepare-se para uma experiência única com o irresistivel Ring Deluxe! Coroado com anéis de cebola dourados e crocantes, banhados em um molho especial que vai fazer você querer mais. Uma combinação de texturas e sabores que vai surpreender seu paladar!</p>
+
+                  <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold text-lg">R$ 19,90</p>
+                    <button 
+                      class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                      data-name="Hamburguer Ring Deluxe"
+                      data-price="18.90"
+                    >
+                      <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                  </div>
+
+              </div>
+
+          </div>
+          <!-- FIM PRODUTO ITEM 7 -->
+
+                <!-- PRODUTO ITEM 8 Vegano -->
+                <div class="flex gap-2">
+                  <img src="./assets/hamb-8.png" alt="Hamburguer Vegano"
+                      class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+  
+                  <div>
+                      <p class="font-bold">Hamburguer Vegano</p>
+                      <p class="text-sm"> Nosso hamburguer vegano combina uma patty artesanal rico em nutrientes com uma explosão de vegetais frescos e coloridos. Uma opção saudavel e deliciosa que vai encantar seus sentidos e nutrir seu corpo. Perfeito para quem busca uma refeição leve, mas cheia de sabor!</p>
+  
+                      <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 25,90</p>
+                        <button 
+                          class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                          data-name="Hamburguer Vegano"
+                          data-price="25.90"
+                        >
+                          <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                      </div>
+  
+                  </div>
+  
+              </div>
+              <!-- FIM PRODUTO ITEM 8 -->
+
+        </main>
+
+        <div class="mx-auto max-w-7xl px-2 my-2">
+          <h2 class="font-bold text-3xl">
+            Bebidas
+          </h2>
+        </div>
+            <!-- GRID BEBIDAS -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 md:gap-12 mx-auto max-w-7xl px-3 mb-16" id="menu">
+
+                         <!-- PRODUTO BEBIDA 1 COCA -->
+                         <div class="flex gap-2 w-full">
+                          <img src="./assets/refri-1.png" alt="Coca Cola Lata"
+                              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+          
+                          <div class="w-full">
+                              <p class="font-bold">Coca Cola Lata</p>
+                                        
+                              <div class="flex items-center gap-2 justify-between mt-3">
+                                <p class="font-bold text-lg">R$ 5,99</p>
+                                <button 
+                                  class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                  data-name="Coca Cola Lata"
+                                  data-price="5.99"
+                                >
+                                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                              </div>
+          
+                          </div>
+          
+                      </div>
+                      <!-- FIM PRODUTO BEBIDA 1 -->
+                       
+                         <!-- PRODUTO BEBIDA 2 ANTARCTICA -->
+                         <div class="flex gap-2 w-full">
+                          <img src="./assets/refri-2.png" alt="Guaraná Antarctica Lata"
+                              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+          
+                          <div class="w-full">
+                              <p class="font-bold">Guaraná Antarctica Lata</p>
+                                        
+                              <div class="flex items-center gap-2 justify-between mt-3">
+                                <p class="font-bold text-lg">R$ 4,99</p>
+                                <button 
+                                  class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                  data-name="Guaraná Antarctica Lata"
+                                  data-price="4.99"
+                                >
+                                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                              </div>
+          
+                          </div>
+          
+                      </div>
+                      <!-- FIM PRODUTO BEBIDA 2 -->
+        </div>
+          <!-- FIM GRID BEBIDAS -->
+    </div>
+    <!-- FIM DO MENU -->
+
+    <!-- MODAL CART -->
+     <div class="bg-black/50 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden"
+     id="cart-modal">
+     
+      <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[400px]">
+        <h2 class="text-center font-bold text-2xl mb-2">Meu Carrinho</h2>
+
+        <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+
+        <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+
+        <p class="font-bold mt-4">Endereço de Entrega</p>
+        <input 
+          type="text"
+          placeholder="Digite o endereço completo..."
+          id="address"
+          class="w-full border-2 p-1 rounded my-1"
+          />
+          <p class="text-red-600 hidden" id="address-warn">Digite seu endereço completo!</p>
+
+          <div class="flex items-center justify-between mt-5 w-full">
+            <button id="close-modal-btn">Fechar</button>
+            <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar Pedido</button>
+          </div>
+
+      </div>
+     </div>
+    <!-- MODAL CART -->
+
+                  <!-- BUTTON CART FOOTER-->
+  <footer class="w-full bg-red-600 py-1 fixed bottom-0 z-40 flex items-center justify-center">
+    <button
+      class="flex items-center gap-2 text-white font-bold"
+      id="cart-btn">
+
+      (<span id="cart-count">0</span>)
+      Veja o Carrinho
+        <i class="fa fa-cart-plus text-lg text-white"></i>
+    </button>
+  </footer>
+                <!-- FIM BUTTON CART FOOTER-->
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+   <script src="script.js"></script>
+
+</body>
+
+</html>
